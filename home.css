@@ -47,6 +47,12 @@ h3{
     width: 100%;
 }
 
+.nav.sticky {
+    position: fixed;
+    background-color: rgb(75, 75, 75);
+    z-index: 100;
+}
+
 .nav .name{
     display: flex;
     align-items: center;
@@ -110,8 +116,7 @@ h3{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 .about--info .about--text{
     flex: 2;
@@ -229,7 +234,7 @@ h3{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap ;
 }
 
 .contact-form{
@@ -277,6 +282,43 @@ input[type=email], select, textarea {
     font-size: 3rem;
     padding: 1%;
   }
+
+
+  @media screen and (max-width:600px){
+
+    html{
+        font-size: 50%;
+    }
+    .nav .name{
+    display: none;
+    }
+    .nav .nav--links{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .header{
+        /* height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('mainImg.jpg'); 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: none;
+        background-size: cover; 
+         */
+        width: 100%;
+    }
+    .location iframe{ 
+        width: 100%;
+    }
+
+    .about--text{
+        padding: 2%;
+    }
+}
 
 
 
